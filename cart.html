@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DMEDELIVERD </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <!-- CSS
+	============================================ -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Ionicons CSS -->
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link href="assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Helper CSS -->
+    <link href="assets/css/helper.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <!--=============================================
+	=            header container         =
+	=============================================-->
+
+    <div class="header-container header-sticky">
+
+        <!--=============================================
+		=            header top         =
+		=============================================-->
+
+        <div class="header-top pt-15 pb-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="header-top-text text-center text-lg-left mb-0 mb-md-15 mb-sm-15">
+                            <p><i class="fa fa-phone"></i> <span class="support-no">Support: (012) 800 456 789</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!--=======  header top dropdowns  =======-->
+
+                        <div class="header-top-dropdown d-flex justify-content-center justify-content-lg-end">
+
+
+                            <div class="single-dropdown">
+                                <a href="#"><span>Make Payment </span></a>
+
+                            </div>
+                            <span class="separator pl-15 pr-15">|</span>
+                            <div class="single-dropdown">
+                                <a href="#"><span>Enroll </span></a>
+
+                            </div>
+                            <span class="separator pl-15 pr-15">|</span>
+                            <div class="single-dropdown">
+                                <a href="#"><span>Quick Reorder </span></a>
+
+                            </div>
+                            <span class="separator pl-15 pr-15">|</span>
+                            <!--=======  single dropdown  =======-->
+
+
+                            <div class="single-dropdown">
+                                <a href="#" id="changeAccount"><span id="accountMenuName">My Account <i
+                                            class="fa fa-angle-down"></i></span></a>
+                                <div class="language-currency-list hidden" id="accountList">
+                                    <ul>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--=======  End of single dropdown  =======-->
+                        </div>
+                        <!--=======  End of header top dropdowns  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=====  End of header top  ======-->
+
+        <!--=============================================
+		=            navigation menu top            =
+		=============================================-->
+
+
+        <div class="navigation-menu-top pt-35 pb-35 pt-md-15 pb-md-15 pt-sm-15 pb-sm-15">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-lg-3 col-md-6 col-sm-6 order-1 order-lg-1">
+                        <!--=======  logo  =======-->
+
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+
+                        <!--=======  End of logo  =======-->
+                    </div>
+                    <div class="col-12 col-lg-7 col-md-12 col-sm-12 order-3 order-lg-2">
+                        <!--=======  header feature container  =======-->
+
+                        <div class="header-feature-container mt-md-15 mt-sm-15">
+                            <!--=======  single feature  =======-->
+
+                            <div class="single-feature d-flex">
+                                <div class="image">
+                                    <i class="icon ion-md-globe"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>FREE SHIPPING</h5>
+                                    <p>Free shipping on all order</p>
+                                </div>
+                            </div>
+
+                            <!--=======  End of single feature  =======-->
+                            <!--=======  single feature  =======-->
+
+                            <div class="single-feature d-flex">
+                                <div class="image">
+                                    <i class="icon ion-md-checkmark-circle-outline"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>MONEY RETURN</h5>
+                                    <p>Back guarantee under 7 days</p>
+                                </div>
+                            </div>
+
+                            <!--=======  End of single feature  =======-->
+
+
+                        </div>
+
+                        <!--=======  End of header feature container  =======-->
+
+
+                    </div>
+                    <div class=" col-6 col-lg-2 col-md-6 col-sm-6 order-2 order-lg-3">
+                        <!--=======  cart icon  =======-->
+
+                        <div class="minicart-section">
+                            <a href="#" id="cart-icon">
+                                <span class="image"><i class="icon ion-md-cart"></i></span>
+                                <h5>$215.00 <i class="fa fa-angle-down"></i></h5>
+                                <p>3 items</p>
+                            </a>
+
+                            <!-- cart floating box -->
+                            <div class="cart-floating-box hidden" id="cart-floating-box">
+                                <div class="cart-items">
+                                    <div class="cart-float-single-item d-flex">
+                                        <span class="remove-item" id="remove-item"><a href="#"><i
+                                                    class="icon ion-md-close"></i></a></span>
+                                        <div class="cart-float-single-item-image">
+                                            <a href="#"><img src="assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="cart-float-single-item-desc">
+                                            <p class="product-title"> <a href="#">Duis pulvinar obortis eleifend </a>
+                                            </p>
+                                            <p class="quantity"> Qty: 1</p>
+                                            <p class="price">$20.50</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-float-single-item d-flex">
+                                        <span class="remove-item"><a href="#"><i
+                                                    class="icon ion-md-close"></i></a></span>
+                                        <div class="cart-float-single-item-image">
+                                            <a href="#"><img src="assets/images/products/product02.jpg" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="cart-float-single-item-desc">
+                                            <p class="product-title"> <a href="#">Fusce ultricies dolor vitae</a></p>
+                                            <p class="quantity"> Qty: 1</p>
+                                            <p class="price">$20.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-calculation">
+                                    <div class="calculation-details">
+                                        <p class="total">Subtotal <span>$22</span></p>
+                                    </div>
+                                    <div class="floating-cart-btn text-center">
+                                        <a class="fl-btn pull-left" href="#">View Cart</a>
+                                        <a class="fl-btn pull-right" href="#">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of cart floating box -->
+                        </div>
+
+                        <!--=======  End of cart icon  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of navigation menu top  =======-->
+
+        <!--=============================================
+		=            navigation menu         =
+		=============================================-->
+
+        <div class="navigation-menu">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                        <!--=======  category menu  =======-->
+
+                        <div class="hero-side-category">
+                            <!-- Category Toggle Wrap -->
+                            <div class="category-toggle-wrap">
+                                <!-- Category Toggle -->
+                                <button class="category-toggle"> <i class="fa fa-bars"></i> CATEGORIES QUCK
+                                    LINKS</button>
+                            </div>
+
+                            <!-- Category Menu -->
+                            <nav class="category-menu">
+                                <ul>
+                                    <li><a href="#">Aids to Daily Living</a></li>
+                                    <li><a href="#">Air Cleaners</a></li>
+                                    <li><a href="#">Ambulatory Walking Aids</a></li>
+                                    <li><a href="#">Asthma Management</a></li>
+                                    <li><a href="#">Baby / Infant Care</a></li>
+                                    <li><a href="#">Bandages, Braces, Supports and Accessories</a></li>
+                                    <li><a href="#">Bath and Toilet Aids</a></li>
+                                    <li><a href="#">Bath and Toiletries</a></li>
+                                    <li><a href="#">Beauty and Fragrance</a></li>
+                                    <li><a href="#">Breastfeeding</a></li>
+                                    <li><a href="#">Canes and Crutches</a></li>
+                                    <li><a href="#">CPAP and Supplies</a></li>
+                                    <li><a href="#">Decubitis Care Equipment</a></li>
+                                    <li><a href="#">Diabetes / Blood Glucose Management</a></li>
+                                    <li><a href="#">Diabetes / Pharmacy</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">Family Planning</a></li>
+                                    <li><a href="#">Female Personal Products</a></li>
+                                    <li><a href="#">Home Medical Equipment</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!--=======  End of category menu =======-->
+
+                        <!--=======  sticky logo  =======-->
+
+                        <div class="sticky-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+
+                        <!--=======  End of sticky logo  =======-->
+
+                        <!--=======  search icon for tablet  =======-->
+
+                        <div class="search-icon-menutop-tablet text-right d-inline-block d-lg-none">
+                            <a href="#" id="search-overlay-active-button">
+                                <i class="icon ion-md-search"></i>
+                            </a>
+                        </div>
+
+                        <!--=======  End of search icon for tablet  =======-->
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <!-- navigation section -->
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li class="active"><a href="index.html">HOME</a></li>
+                                    <li><a href="#">PRODUCT</a></li>
+                                    <li><a href="#">PROGRAMS</a></li>
+                                    <li><a href="#">SERVICES</a></li>
+                                    <li><a href="#">ACCEPTED INSURANCE</a></li>
+                                    <li><a href="#">HEALTH EDUCATION</a></li>
+                                    <li><a href="#">SUPPORT/CONTACT US</a></li>
+                                    <li><a href="#" class="search_link"><i class="fa fa-search"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- end of navigation section -->
+                    </div>
+
+                    <div class="col-12 d-block d-lg-none">
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+                <form role="search" method="" id="" action="" class="search-form-menu">
+                    <input type="text" class="form-control" value="Search product..." name="" id="" placeholder="Search product..." class="">
+
+                </form>
+            </div>
+        </div>
+
+        <!--=====  End of navigation menu  ======-->
+
+    </div>
+
+    <!--=====  End of header container  ======-->
+
+
+    <!-- BREADCRUMB START -->
+
+    <div class="breadcrumb-area pt-15 pb-15">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--=======  breadcrumb container  =======-->
+
+                    <div class="breadcrumb-container">
+                        <nav>
+                            <ul>
+                                <li class="parent-page"><a href="index.html">Home</a></li>
+                                <li>Cart</li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!--=======  End of breadcrumb container  =======-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMB END -->
+    <!-- CART DETAIL -->
+    <div class="page-section mb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#">
+                        <!--=======  cart table  =======-->
+
+                        <div class="cart-table table-responsive mb-40">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-thumbnail">Image</th>
+                                        <th class="pro-title">Product</th>
+                                        <th class="pro-price">Price</th>
+                                        <th class="pro-quantity">Quantity</th>
+                                        <th class="pro-subtotal">Total</th>
+                                        <th class="pro-remove">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="detail.html"><img src="assets/images/products/product01.jpg" class="img-fluid" alt="Product"></a>
+
+                                        </td>
+                                        <td class="pro-title text-left"><a href="detail.html">Cillum dolore tortor nisl
+                                                fermentum</a>
+                                            <span class="d-block">Order # 02751091284</span>
+                                            <span class="d-block">Mfg # 91284</span>
+                                            <span class="d-block">Mfg Name APOTHECARY</span>
+                                            <span class="d-block">HCPCS A9270 - Non-covered item or service</span>
+                                        </td>
+                                        <td class="pro-price"><span>$29.00</span></td>
+                                        <td class="pro-quantity">
+                                            <div class="pro-qty"><input type="text" value="1"><a href="#" class="inc qty-btn">+</a><a href="#" class="dec qty-btn">-</a></div>
+                                        </td>
+                                        <td class="pro-subtotal"><span>$29.00</span></td>
+                                        <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="detail.html"><img src="assets/images/products/product02.jpg" class="img-fluid" alt="Product"></a>
+
+                                        </td>
+                                        <td class="pro-title text-left"><a href="detail.html">Auctor gravida
+                                                pellentesque</a>
+                                            <span class="d-block">Order # 02751091284</span>
+                                            <span class="d-block">Mfg # 91284</span>
+                                            <span class="d-block">Mfg Name APOTHECARY</span>
+                                            <span class="d-block">HCPCS A9270 - Non-covered item or service</span></td>
+                                        <td class="pro-price"><span>$30.00</span></td>
+                                        <td class="pro-quantity">
+                                            <div class="pro-qty"><input type="text" value="2"><a href="#" class="inc qty-btn">+</a><a href="#" class="dec qty-btn">-</a></div>
+                                        </td>
+                                        <td class="pro-subtotal"><span>$60.00</span></td>
+                                        <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="detail.html"><img src="assets/images/products/product03.jpg" class="img-fluid" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title text-left"><a href="detail.html">Cillum dolore tortor nisl
+                                                fermentum</a>
+                                            <span class="d-block">Order # 02751091284</span>
+                                            <span class="d-block">Mfg # 91284</span>
+                                            <span class="d-block">Mfg Name APOTHECARY</span>
+                                            <span class="d-block">HCPCS A9270 - Non-covered item or service</span>
+                                        </td>
+                                        <td class="pro-price"><span>$25.00</span></td>
+                                        <td class="pro-quantity">
+                                            <div class="pro-qty"><input type="text" value="1"><a href="#" class="inc qty-btn">+</a><a href="#" class="dec qty-btn">-</a></div>
+                                        </td>
+                                        <td class="pro-subtotal"><span>$25.00</span></td>
+                                        <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pro-thumbnail">
+                                            <a href="detail.html"><img src="assets/images/products/product04.jpg" class="img-fluid" alt="Product"></a>
+                                        </td>
+                                        <td class="pro-title text-left"><a href="detail.html">Cillum dolore tortor nisl
+                                                fermentum</a>
+                                            <span class="d-block">Order # 02751091284</span>
+                                            <span class="d-block">Mfg # 91284</span>
+                                            <span class="d-block">Mfg Name APOTHECARY</span>
+                                            <span class="d-block">HCPCS A9270 - Non-covered item or service</span>
+                                        </td>
+                                        <td class="pro-price"><span>$11.00</span></td>
+                                        <td class="pro-quantity">
+                                            <div class="pro-qty"><input type="text" value="1"><a href="#" class="inc qty-btn">+</a><a href="#" class="dec qty-btn">-</a></div>
+                                        </td>
+                                        <td class="pro-subtotal"><span>$11.00</span></td>
+                                        <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!--=======  End of cart table  =======-->
+
+
+                    </form>
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+
+                        </div>
+
+
+                        <div class="col-lg-6 col-12 d-flex">
+                            <!--=======  Cart summery  =======-->
+
+                            <div class="cart-summary">
+                                <div class="cart-summary-wrap">
+                                    <h4>Cart Summary</h4>
+                                    <p>Sub Total <span>$1250.00</span></p>
+                                    <p>Shipping Cost <span>$00.00</span></p>
+                                    <h2>Grand Total <span>$1250.00</span></h2>
+                                </div>
+                                <div class="cart-summary-button">
+                                    <a href="checkout.html" class="checkout-btn">Checkout</a>
+                                </div>
+                            </div>
+
+                            <!--=======  End of Cart summery  =======-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--=============================================
+	=            footer         =
+	=============================================-->
+
+    <div class="footer-container">
+        <!--=======  footer navigation  =======-->
+
+        <div class="footer-navigation pt-40 pb-20 pb-lg-40 pt-sm-30 pb-sm-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <!--=======  address block  =======-->
+
+                        <div class="address-block">
+                            <div class="image">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <div class="address-text">
+                                <ul>
+                                    <li>Address: 123 Main Street, Anytown, CA 12345 - USA.</li>
+                                    <li>Phone: (012) 800 456 789</li>
+                                    <li>Fax: (012) 800 456 789</li>
+                                    <li>Email: support@dmedeliverd.com</li>
+                                </ul>
+                            </div>
+
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="http://www.twitter.com/" class="twitter" data-tooltip="Twitter"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://www.facebook.com/" class="facebook" data-tooltip="Facebook"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                    <li><a href="http://www.behance.com/" class="behance" data-tooltip="Behance"><i
+                                                class="fa fa-behance"></i></a></li>
+                                    <li><a href="http://www.pinterest.com/" class="pinterest" data-tooltip="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href="http://www.rss.com/" class="rss" data-tooltip="RSS"><i
+                                                class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--=======  End of address block  =======-->
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <!--=======  widget block  =======-->
+
+                        <div class="widget-block">
+                            <h4 class="footer-widget-title mb-sm-10">INFORMATION</h4>
+                            <ul>
+                                <li><a href="#">Help/Contact Us</a></li>
+                                <li><a href="#">Quick Reorder</a></li>
+                                <li><a href="#">Faqs</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Privacy Statement</a></li>
+                                <li><a href="#">Employment</a></li>
+                            </ul>
+                        </div>
+
+                        <!--=======  End of widget block  =======-->
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <!--=======  widget block  =======-->
+
+                        <div class="widget-block">
+                            <h4 class="footer-widget-title mt-sm-20 mb-sm-10">MY ACCOUNT</h4>
+                            <ul>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Accepted Insurance</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Categories</a></li>
+                            </ul>
+                        </div>
+
+                        <!--=======  End of widget block  =======-->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <!--=======  widget block  =======-->
+
+                        <div class="widget-block">
+                            <h4 class="footer-widget-title mt-sm-20 mb-sm-10">JOIN OUR NEWSLETTER NOW</h4>
+                            <p>Get E-mail updates about our latest shop and special offers.</p>
+
+                            <div class="newsletter-form mb-20">
+                                <form id="" class="">
+                                    <input type="email" placeholder="Enter your email" required>
+                                    <button type="submit" value="submit">subscribe</button>
+                                </form>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of footer navigation  =======-->
+
+        <!--=======  footer copyright  =======-->
+
+        <div class="footer-copyright pt-20 pb-20">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-left mb-20 mb-md-0">
+                        <!--=======  footer copyright text  =======-->
+
+                        <div class="footer-copyright-text">
+                            <p>Copyright &copy; 2018 <a href="#">DMEDELIVERD</a>, All Rights Reserved.</p>
+                        </div>
+
+                        <!--=======  End of footer copyright text  =======-->
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <!--=======  payment logo  =======-->
+
+                        <div class="payment-logo">
+                            <img src="assets/images/payment.png" class="img-fluid" alt="">
+                        </div>
+
+                        <!--=======  End of payment logo  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of footer copyright  =======-->
+    </div>
+
+    <!--=====  End of footer  ======-->
+
+    <!--=============================================
+	=            search overlay         =
+	=============================================-->
+
+    <div class="search-overlay" id="search-overlay">
+        <a href="#" class="search-overlay-close" id="search-overlay-close"><i class="fa fa-times"></i></a>
+        <div class="search-box">
+            <input type="search" placeholder="Search entire store here">
+            <button><i class="icon ion-md-search"></i></button>
+        </div>
+    </div>
+
+    <!--=====  End of search overlay  ======-->
+
+
+    <!-- scroll to top  -->
+    <a href="#" class="scroll-top"></a>
+    <!-- end of scroll to top -->
+
+    <!-- JS
+	============================================ -->
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

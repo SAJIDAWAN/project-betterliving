@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DMEDELIVERD </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <!-- CSS
+	============================================ -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Ionicons CSS -->
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link href="assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Helper CSS -->
+    <link href="assets/css/helper.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+    <!--=============================================
+	=            header container         =
+	=============================================-->
+
+    <div class="header-container header-sticky">
+
+        <!--=============================================
+		=            header top         =
+		=============================================-->
+
+        <div class="header-top pt-15 pb-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="header-top-text text-center text-lg-left mb-0 mb-md-15 mb-sm-15">
+                            <p><i class="fa fa-phone"></i> <span class="support-no">Support: (012) 800 456 789</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <!--=======  header top dropdowns  =======-->
+
+                        <div class="header-top-dropdown d-flex justify-content-center justify-content-lg-end">
+
+
+                            <div class="single-dropdown">
+                                <a href="#"><span>Make Payment </span></a>
+
+                            </div>
+                            <span class="separator pl-15 pr-15">|</span>
+                            <div class="single-dropdown">
+                                <a href="#"><span>Enroll </span></a>
+
+                            </div>
+                            <span class="separator pl-15 pr-15">|</span>
+                            <div class="single-dropdown">
+                                <a href="#"><span>Quick Reorder </span></a>
+
+                            </div>
+                            <span class="separator pl-15 pr-15">|</span>
+                            <!--=======  single dropdown  =======-->
+
+
+                            <div class="single-dropdown">
+                                <a href="#" id="changeAccount"><span id="accountMenuName">My Account <i
+                                            class="fa fa-angle-down"></i></span></a>
+                                <div class="language-currency-list hidden" id="accountList">
+                                    <ul>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Login</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--=======  End of single dropdown  =======-->
+                        </div>
+                        <!--=======  End of header top dropdowns  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=====  End of header top  ======-->
+
+        <!--=============================================
+		=            navigation menu top            =
+		=============================================-->
+
+
+        <div class="navigation-menu-top pt-35 pb-35 pt-md-15 pb-md-15 pt-sm-15 pb-sm-15">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-lg-3 col-md-6 col-sm-6 order-1 order-lg-1">
+                        <!--=======  logo  =======-->
+
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+
+                        <!--=======  End of logo  =======-->
+                    </div>
+                    <div class="col-12 col-lg-7 col-md-12 col-sm-12 order-3 order-lg-2">
+                        <!--=======  header feature container  =======-->
+
+                        <div class="header-feature-container mt-md-15 mt-sm-15">
+                            <!--=======  single feature  =======-->
+
+                            <div class="single-feature d-flex">
+                                <div class="image">
+                                    <i class="icon ion-md-globe"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>FREE SHIPPING</h5>
+                                    <p>Free shipping on all order</p>
+                                </div>
+                            </div>
+
+                            <!--=======  End of single feature  =======-->
+                            <!--=======  single feature  =======-->
+
+                            <div class="single-feature d-flex">
+                                <div class="image">
+                                    <i class="icon ion-md-checkmark-circle-outline"></i>
+                                </div>
+                                <div class="content">
+                                    <h5>MONEY RETURN</h5>
+                                    <p>Back guarantee under 7 days</p>
+                                </div>
+                            </div>
+
+                            <!--=======  End of single feature  =======-->
+
+
+                        </div>
+
+                        <!--=======  End of header feature container  =======-->
+
+
+                    </div>
+                    <div class=" col-6 col-lg-2 col-md-6 col-sm-6 order-2 order-lg-3">
+                        <!--=======  cart icon  =======-->
+
+                        <div class="minicart-section">
+                            <a href="#" id="cart-icon">
+                                <span class="image"><i class="icon ion-md-cart"></i></span>
+                                <h5>$215.00 <i class="fa fa-angle-down"></i></h5>
+                                <p>3 items</p>
+                            </a>
+
+                            <!-- cart floating box -->
+                            <div class="cart-floating-box hidden" id="cart-floating-box">
+                                <div class="cart-items">
+                                    <div class="cart-float-single-item d-flex">
+                                        <span class="remove-item" id="remove-item"><a href="#"><i
+                                                    class="icon ion-md-close"></i></a></span>
+                                        <div class="cart-float-single-item-image">
+                                            <a href="#"><img src="assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="cart-float-single-item-desc">
+                                            <p class="product-title"> <a href="#">Duis pulvinar obortis eleifend </a>
+                                            </p>
+                                            <p class="quantity"> Qty: 1</p>
+                                            <p class="price">$20.50</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart-float-single-item d-flex">
+                                        <span class="remove-item"><a href="#"><i
+                                                    class="icon ion-md-close"></i></a></span>
+                                        <div class="cart-float-single-item-image">
+                                            <a href="#"><img src="assets/images/products/product02.jpg" class="img-fluid" alt=""></a>
+                                        </div>
+                                        <div class="cart-float-single-item-desc">
+                                            <p class="product-title"> <a href="#">Fusce ultricies dolor vitae</a></p>
+                                            <p class="quantity"> Qty: 1</p>
+                                            <p class="price">$20.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-calculation">
+                                    <div class="calculation-details">
+                                        <p class="total">Subtotal <span>$22</span></p>
+                                    </div>
+                                    <div class="floating-cart-btn text-center">
+                                        <a class="fl-btn pull-left" href="#">View Cart</a>
+                                        <a class="fl-btn pull-right" href="#">Checkout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end of cart floating box -->
+                        </div>
+
+                        <!--=======  End of cart icon  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of navigation menu top  =======-->
+
+        <!--=============================================
+		=            navigation menu         =
+		=============================================-->
+
+        <div class="navigation-menu">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12">
+                        <!--=======  category menu  =======-->
+
+                        <div class="hero-side-category">
+                            <!-- Category Toggle Wrap -->
+                            <div class="category-toggle-wrap">
+                                <!-- Category Toggle -->
+                                <button class="category-toggle"> <i class="fa fa-bars"></i> CATEGORIES QUCK
+                                    LINKS</button>
+                            </div>
+
+                            <!-- Category Menu -->
+                            <nav class="category-menu">
+                                <ul>
+                                    <li><a href="#">Aids to Daily Living</a></li>
+                                    <li><a href="#">Air Cleaners</a></li>
+                                    <li><a href="#">Ambulatory Walking Aids</a></li>
+                                    <li><a href="#">Asthma Management</a></li>
+                                    <li><a href="#">Baby / Infant Care</a></li>
+                                    <li><a href="#">Bandages, Braces, Supports and Accessories</a></li>
+                                    <li><a href="#">Bath and Toilet Aids</a></li>
+                                    <li><a href="#">Bath and Toiletries</a></li>
+                                    <li><a href="#">Beauty and Fragrance</a></li>
+                                    <li><a href="#">Breastfeeding</a></li>
+                                    <li><a href="#">Canes and Crutches</a></li>
+                                    <li><a href="#">CPAP and Supplies</a></li>
+                                    <li><a href="#">Decubitis Care Equipment</a></li>
+                                    <li><a href="#">Diabetes / Blood Glucose Management</a></li>
+                                    <li><a href="#">Diabetes / Pharmacy</a></li>
+                                    <li><a href="#">Education</a></li>
+                                    <li><a href="#">Family Planning</a></li>
+                                    <li><a href="#">Female Personal Products</a></li>
+                                    <li><a href="#">Home Medical Equipment</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <!--=======  End of category menu =======-->
+
+                        <!--=======  sticky logo  =======-->
+
+                        <div class="sticky-logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+
+                        <!--=======  End of sticky logo  =======-->
+
+                        <!--=======  search icon for tablet  =======-->
+
+                        <div class="search-icon-menutop-tablet text-right d-inline-block d-lg-none">
+                            <a href="#" id="search-overlay-active-button">
+                                <i class="icon ion-md-search"></i>
+                            </a>
+                        </div>
+
+                        <!--=======  End of search icon for tablet  =======-->
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <!-- navigation section -->
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li class="active"><a href="index.html">HOME</a></li>
+                                    <li><a href="#">PRODUCT</a></li>
+                                    <li><a href="#">PROGRAMS</a></li>
+                                    <li><a href="#">SERVICES</a></li>
+                                    <li><a href="#">ACCEPTED INSURANCE</a></li>
+                                    <li><a href="#">HEALTH EDUCATION</a></li>
+                                    <li><a href="#">SUPPORT/CONTACT US</a></li>
+                                    <li><a href="#" class="search_link"><i class="fa fa-search"
+                                                aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- end of navigation section -->
+                    </div>
+
+                    <div class="col-12 d-block d-lg-none">
+                        <!-- Mobile Menu -->
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
+                <form role="search" method="" id="" action="" class="search-form-menu">
+                    <input type="text" class="form-control" value="Search product..." name="" id="" placeholder="Search product..." class="">
+
+                </form>
+            </div>
+        </div>
+
+        <!--=====  End of navigation menu  ======-->
+
+    </div>
+
+    <!--=====  End of header container  ======-->
+
+
+    <!-- BREADCRUMB START -->
+
+    <div class="breadcrumb-area pt-15 pb-15">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--=======  breadcrumb container  =======-->
+
+                    <div class="breadcrumb-container">
+                        <nav>
+                            <ul>
+                                <li class="parent-page"><a href="index.html">Home</a></li>
+                                <li class="parent-page"><a href="shop-left-sidebar.html">Shop</a></li>
+                                <li>Product Detail</li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <!--=======  End of breadcrumb container  =======-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BREADCRUMB END -->
+
+
+    <!--=============================================
+    =            single product content         =
+    =============================================-->
+
+    <div class="single-product-content-area mb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-6 col-xs-12 mb-xxs-25 mb-xs-25 mb-sm-25">
+                    <!-- single product tabstyle one image gallery -->
+                    <div class="product-image-slider fl-product-image-slider fl3-product-image-slider">
+                        <!--product large image start -->
+                        <div class="tab-content product-large-image-list fl-product-large-image-list fl3-product-large-image-list" id="myTabContent">
+                            <div class="tab-pane fade show active" id="single-slide-1" role="tabpanel" aria-labelledby="single-slide-tab-1">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+                                    <a href="assets/images/products/product01.jpg" class="big-image-popup"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide-2" role="tabpanel" aria-labelledby="single-slide-tab-2">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+                                    <a href="assets/images/products/product01.jpg" class="big-image-popup"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide-3" role="tabpanel" aria-labelledby="single-slide-tab-3">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+                                    <a href="assets/images/products/product01.jpg" class="big-image-popup"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide-4" role="tabpanel" aria-labelledby="single-slide-tab-4">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+                                    <a href="assets/images/products/product01.jpg" class="big-image-popup"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide-5" role="tabpanel" aria-labelledby="single-slide-tab-5">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+                                    <a href="assets/images/products/product01.jpg" class="big-image-popup"><i
+                                            class="fa fa-search-plus"></i></a>
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                        </div>
+                        <!--product large image End-->
+
+                        <!--product small image slider Start-->
+                        <div class="product-small-image-list fl-product-small-image-list fl3-product-small-image-list">
+                            <div class="nav small-image-slider fl3-small-image-slider" role="tablist">
+                                <div class="single-small-image img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-1" href="#single-slide-1"><img src="assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                </div>
+                                <div class="single-small-image img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide-2"><img src="assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                </div>
+                                <div class="single-small-image img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide-3"><img src="assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                </div>
+                                <div class="single-small-image img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide-4"><img src="assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                </div>
+                                <div class="single-small-image img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-5" href="#single-slide-5"><img src="assets/images/products/product01.jpg" class="img-fluid" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--product small image slider End-->
+                    </div>
+                    <!-- end of single product tabstyle one image gallery -->
+                </div>
+                <div class="col-lg-7 col-md-6 col-xs-12">
+                    <!-- product view description -->
+                    <div class="product-feature-details">
+                        <h2 class="product-title mb-15">Kaoreet lobortis sagittis</h2>
+
+                        <div class="rating d-inline-block mb-15">
+                            <i class="fa fa-star active"></i>
+                            <i class="fa fa-star active"></i>
+                            <i class="fa fa-star active"></i>
+                            <i class="fa fa-star active"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                        <p class="d-inline-block ml-10 review-link"><a href="#">(1 customer review)</a></p>
+
+                        <h2 class="product-price mb-5">
+                            <span class="main-price discounted">$12.90</span>
+                            <span class="discounted-price"> $10.00</span>
+                        </h2>
+                        <div class="table-content table-responsive shop-details-table mt-10">
+                            <table class="table table-bordered">
+
+                                <tbody>
+                                    <tr>
+                                        <th>Order#</th>
+                                        <td>00074124001</td>
+                                    </tr>
+                                    <tr>
+                                        <th> Mfg #</th>
+                                        <td> 00240 EA</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Order#</th>
+                                        <td>00240 EA</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Mfg Name</th>
+                                        <td>ABBOTT NUT</td>
+                                    </tr>
+                                    <tr>
+                                        <th>HCPCS</th>
+                                        <td> B4103 - EF ped fluid and electrolyte</td>
+                                    </tr>
+                                    <tr>
+                                        <th> Weight</th>
+                                        <td>Not available</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Taxable</th>
+                                        <td>No</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="cart-buttons mb-20">
+                            <span class="quantity-title mr-10">Quantity: </span>
+                            <div class="pro-qty mb-20">
+                                <input type="text" value="1">
+                            </div>
+                            <div class="add-to-cart-btn d-block">
+                                <a href="#" t class="fl-bn"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                            </div>
+                        </div>
+
+                        <p class="manfacture-links mb-20 pb-15">
+                            <a href="#"> Products from Manufacturer</a>
+                            <a href="#"> Similar Products</a>
+                        </p>
+
+
+
+                        <div class="social-share-buttons">
+                            <h3>share this product</h3>
+                            <ul>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end of product quick view description -->
+                </div>
+            </div>
+
+            <div class="related-product-slider-area mb-50 mt-50">
+
+                <!--=======  section title  =======-->
+
+                <div class="title-product p-3 pb-0">
+                    <h3>description</h3>
+                </div>
+                <div class="fl-slider p-3">
+                    <div class="product-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing
+                            cursus eu, suscipit id nulla.</p>
+
+                        <p>Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit
+                            est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque metus, consequat et
+                            blandit et, luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget.</p>
+                    </div>
+                </div>
+                <!--=======  End of section title  =======-->
+
+            </div>
+        </div>
+    </div>
+
+    <!--=====  End of single product content  ======-->
+
+    <div class="slider-container mt-50 mb-50">
+        <div class="container">
+            <div class="title-product">
+                <h3>SIMILAR PRODUCTS</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="fl-slider tab-product-slider">
+                        <!--=======  single product  =======-->
+
+                        <div class="fl-product">
+                            <div class="image sale-product">
+                                <a href="#">
+                                    <img src="assets/images/products/product01.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/products/product01-2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <!-- wishlist icon -->
+                                <span class="wishlist-icon">
+                                    <a href="#"><i class="icon ion-md-heart-empty"></i></a>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <h2 class="product-title"> <a href="#">Cillum dolore</a></h2>
+                                <div class="rating">
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="product-price">
+                                    <span class="main-price discounted">$71</span>
+                                    <span class="discounted-price">$65</span>
+                                </p>
+
+                                <div class="hover-icons">
+
+
+                                    <a href="#" class="cta-bill mt-3">Bill to Insurance</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=======  End of single product  =======-->
+                        <!--=======  single product  =======-->
+
+                        <div class="fl-product">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/images/products/product02.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/products/product02-2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <!-- wishlist icon -->
+                                <span class="wishlist-icon">
+                                    <a href="#"><i class="icon ion-md-heart-empty"></i></a>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <h2 class="product-title"> <a href="#">Condimentum posuere</a></h2>
+                                <div class="rating">
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="product-price">
+                                    <span class="main-price discounted">$71</span>
+                                    <span class="discounted-price">$65</span>
+                                </p>
+
+                                <div class="hover-icons">
+
+                                    <a href="#" class="cta-bill mt-3">Bill to Insurance</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=======  End of single product  =======-->
+                        <!--=======  single product  =======-->
+
+                        <div class="fl-product">
+                            <div class="image sale-product">
+                                <a href="#">
+                                    <img src="assets/images/products/product03.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/products/product03-2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <!-- wishlist icon -->
+                                <span class="wishlist-icon">
+                                    <a href="#"><i class="icon ion-md-heart-empty"></i></a>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <h2 class="product-title"> <a href="#">Donec eu libero</a></h2>
+                                <div class="rating">
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="product-price">
+                                    <span class="main-price discounted">$71</span>
+                                    <span class="discounted-price">$65</span>
+                                </p>
+
+                                <div class="hover-icons">
+
+                                    <a href="#" class="cta-bill mt-3">Bill to Insurance</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=======  End of single product  =======-->
+                        <!--=======  single product  =======-->
+
+                        <div class="fl-product">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/images/products/product04.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/products/product04-2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <!-- wishlist icon -->
+                                <span class="wishlist-icon">
+                                    <a href="#"><i class="icon ion-md-heart-empty"></i></a>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <h2 class="product-title"> <a href="#">Officiis debitis</a></h2>
+                                <div class="rating">
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="product-price">
+                                    <span class="main-price discounted">$71</span>
+                                    <span class="discounted-price">$65</span>
+                                </p>
+
+                                <div class="hover-icons">
+
+                                    <a href="#" class="cta-bill mt-3">Bill to Insurance</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=======  End of single product  =======-->
+                        <!--=======  single product  =======-->
+
+                        <div class="fl-product">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/images/products/product05.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/products/product05-2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <!-- wishlist icon -->
+                                <span class="wishlist-icon">
+                                    <a href="#"><i class="icon ion-md-heart-empty"></i></a>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <h2 class="product-title"> <a href="#">Cras neque</a></h2>
+                                <div class="rating">
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="product-price">
+                                    <span class="main-price discounted">$71</span>
+                                    <span class="discounted-price">$65</span>
+                                </p>
+
+                                <div class="hover-icons">
+
+                                    <a href="#" class="cta-bill mt-3">Bill to Insurance</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=======  End of single product  =======-->
+                        <!--=======  single product  =======-->
+
+                        <div class="fl-product">
+                            <div class="image">
+                                <a href="#">
+                                    <img src="assets/images/products/product06.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/products/product06-2.jpg" class="img-fluid" alt="">
+                                </a>
+                                <!-- wishlist icon -->
+                                <span class="wishlist-icon">
+                                    <a href="#"><i class="icon ion-md-heart-empty"></i></a>
+                                </span>
+                            </div>
+                            <div class="content">
+                                <h2 class="product-title"> <a href="#">Dolorum fuga</a></h2>
+                                <div class="rating">
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star active"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <p class="product-price">
+                                    <span class="main-price discounted">$71</span>
+                                    <span class="discounted-price">$65</span>
+                                </p>
+
+                                <div class="hover-icons">
+
+                                    <a href="#" class="cta-bill mt-3">Bill to Insurance</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=======  End of single product  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=============================================
+	=            footer         =
+	=============================================-->
+
+    <div class="footer-container">
+        <!--=======  footer navigation  =======-->
+
+        <div class="footer-navigation pt-40 pb-20 pb-lg-40 pt-sm-30 pb-sm-10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <!--=======  address block  =======-->
+
+                        <div class="address-block">
+                            <div class="image">
+                                <a href="index.html">
+                                    <img src="assets/images/logo.png" class="img-fluid" alt="">
+                                </a>
+                            </div>
+
+                            <div class="address-text">
+                                <ul>
+                                    <li>Address: 123 Main Street, Anytown, CA 12345 - USA.</li>
+                                    <li>Phone: (012) 800 456 789</li>
+                                    <li>Fax: (012) 800 456 789</li>
+                                    <li>Email: support@dmedeliverd.com</li>
+                                </ul>
+                            </div>
+
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="http://www.twitter.com/" class="twitter" data-tooltip="Twitter"><i
+                                                class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://www.facebook.com/" class="facebook" data-tooltip="Facebook"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                    <li><a href="http://www.behance.com/" class="behance" data-tooltip="Behance"><i
+                                                class="fa fa-behance"></i></a></li>
+                                    <li><a href="http://www.pinterest.com/" class="pinterest" data-tooltip="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href="http://www.rss.com/" class="rss" data-tooltip="RSS"><i
+                                                class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!--=======  End of address block  =======-->
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <!--=======  widget block  =======-->
+
+                        <div class="widget-block">
+                            <h4 class="footer-widget-title mb-sm-10">INFORMATION</h4>
+                            <ul>
+                                <li><a href="#">Help/Contact Us</a></li>
+                                <li><a href="#">Quick Reorder</a></li>
+                                <li><a href="#">Faqs</a></li>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Privacy Statement</a></li>
+                                <li><a href="#">Employment</a></li>
+                            </ul>
+                        </div>
+
+                        <!--=======  End of widget block  =======-->
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <!--=======  widget block  =======-->
+
+                        <div class="widget-block">
+                            <h4 class="footer-widget-title mt-sm-20 mb-sm-10">MY ACCOUNT</h4>
+                            <ul>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Accepted Insurance</a></li>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Categories</a></li>
+                            </ul>
+                        </div>
+
+                        <!--=======  End of widget block  =======-->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <!--=======  widget block  =======-->
+
+                        <div class="widget-block">
+                            <h4 class="footer-widget-title mt-sm-20 mb-sm-10">JOIN OUR NEWSLETTER NOW</h4>
+                            <p>Get E-mail updates about our latest shop and special offers.</p>
+
+                            <div class="newsletter-form mb-20">
+                                <form id="" class="">
+                                    <input type="email" placeholder="Enter your email" required>
+                                    <button type="submit" value="submit">subscribe</button>
+                                </form>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of footer navigation  =======-->
+
+        <!--=======  footer copyright  =======-->
+
+        <div class="footer-copyright pt-20 pb-20">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-left mb-20 mb-md-0">
+                        <!--=======  footer copyright text  =======-->
+
+                        <div class="footer-copyright-text">
+                            <p>Copyright &copy; 2018 <a href="#">DMEDELIVERD</a>, All Rights Reserved.</p>
+                        </div>
+
+                        <!--=======  End of footer copyright text  =======-->
+                    </div>
+                    <div class="col-md-6 text-center text-md-right">
+                        <!--=======  payment logo  =======-->
+
+                        <div class="payment-logo">
+                            <img src="assets/images/payment.png" class="img-fluid" alt="">
+                        </div>
+
+                        <!--=======  End of payment logo  =======-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=======  End of footer copyright  =======-->
+    </div>
+
+    <!--=====  End of footer  ======-->
+
+    <!--=============================================
+	=            search overlay         =
+	=============================================-->
+
+    <div class="search-overlay" id="search-overlay">
+        <a href="#" class="search-overlay-close" id="search-overlay-close"><i class="fa fa-times"></i></a>
+        <div class="search-box">
+            <input type="search" placeholder="Search entire store here">
+            <button><i class="icon ion-md-search"></i></button>
+        </div>
+    </div>
+
+    <!--=====  End of search overlay  ======-->
+
+
+    <!-- scroll to top  -->
+    <a href="#" class="scroll-top"></a>
+    <!-- end of scroll to top -->
+
+    <!-- JS
+	============================================ -->
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
