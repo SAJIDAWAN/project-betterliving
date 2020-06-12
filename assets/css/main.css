@@ -10050,3 +10050,19 @@ span.required {
 .navigation-menu .container {
     position: relative;
 }
+
+.product-cart {
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+}
+
+.product-cart .title_cart {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #363f4d;
+    display: block
+}
+
+.product-cart p {
+    margin-bottom: 0;
+}
